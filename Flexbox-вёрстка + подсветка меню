@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио разработчика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ШАПКА -->
+        <header>
+            <span class="logo">Портфолио</span>
+            <nav>
+                <a href="#about" class="active">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </header>
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main>
+            <!-- Секция "О себе" -->
+            <section id="about">
+                <h1>О себе</h1>
+                <p>Привет! Я начинающий веб-разработчик. Изучаю HTML, CSS и JavaScript. Создаю чистые и понятные интерфейсы.</p>
+            </section>
+
+            <!-- Секция "Проекты" с карточками -->
+            <section id="projects">
+                <h2>Проекты</h2>
+                <div class="projects-grid">
+                    <article>
+                        <h3>Мой первый сайт</h3>
+                        <p>Простая страница, созданная в ходе выполнения практических работ.</p>
+                    </article>
+                    <article>
+                        <h3>Будущий пет-проект</h3>
+                        <p>Здесь появится описание моего полноценного приложения.</p>
+                    </article>
+                    <article>
+                        <h3>Дизайн-система</h3>
+                        <p>Набор компонентов для быстрого прототипирования.</p>
+                    </article>
+                    <article>
+                        <h3>Мобильное приложение</h3>
+                        <p>Кроссплатформенное приложение на React Native.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Секция "Контакты" с формой -->
+            <section id="contact">
+                <h2>Связаться со мной</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+
+                <div class="contact-links">
+
+                </div>
+            </section>
+        </main>
+
+        <!-- ПОДВАЛ -->
+        <footer>
+            <span>&copy; 2026. Обновлено: <span id="update-date"></span></span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
